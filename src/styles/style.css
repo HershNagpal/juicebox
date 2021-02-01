@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "vcr";
+  src: url("../assets/fonts/VCR.ttf")
+}
+
+@font-face {
+  font-family: "barcode";
+  src: url("../assets/fonts/LibreBarcode39ExtendedText.ttf")
+}
+
+:root {
+  background-color: #cde6ee;
+}
+
+#name {
+  font-family: "barcode";
+  font-size: 60px;
+  font-weight: 100;
+  text-align: center;
+}
+
+#juicebox {
+  position: relative;
+  height: 300px;
+  width: auto;
+}
+
+#logo {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
