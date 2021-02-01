@@ -1,0 +1,22 @@
+.menu {
+    height: 105vh;
+    width: 50vw;
+    left: 0px;
+    top: -5px;
+    position: fixed;
+    background-color: #ffb3d4;
+    transition: transform .2s ease;
+}
+
+.closed {
+    display: none;
+}
+
+.menu h2 {
+    font-family: "barcode";
+    font-weight: 100;
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    padding-top: 100px;
+}

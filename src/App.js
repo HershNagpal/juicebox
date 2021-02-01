@@ -2,17 +2,18 @@ import React from 'react'
 import './styles/style.css'
 import './styles/crt.css'
 import { AnimationComponents } from './components/AnimationComponents'
-import juicebox from './assets/images/juicebox.png'
+import { Juicebox } from './components/Juicebox'
+import { Menu } from './components/Menu'
 
 function App() {
+
+  const [menuState, toggleMenu] = React.useState(true)
 
   return (
     <div className="App">
         {/* <AnimationComponents/> */}
-        <div id="logo">
-          <img id="juicebox" src={juicebox} alt="juicebox.png"/>
-          <h1 id="name">Hersh</h1>
-        </div>
+        <Menu state={menuState}/>
+        <Juicebox toggleMenu={toggleMenu} menuState={menuState}/>
     </div>
   )
 }

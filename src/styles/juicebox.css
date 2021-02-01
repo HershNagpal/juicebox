@@ -1,0 +1,31 @@
+#name {
+    font-family: "barcode";
+    font-size: 60px;
+    font-weight: 100;
+    text-align: center;
+}
+
+#juicebox {
+    position: relative;
+    height: 300px;
+    padding-top: 10px;
+    width: auto;
+    transition: transform .2s ease;
+}
+
+#logo {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#juicebox:hover {
+    transform: scale(1.05);
+}
+
+.right {
+    left: 75%;
+}
